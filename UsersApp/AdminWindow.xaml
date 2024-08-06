@@ -1,0 +1,33 @@
+﻿<Window x:Class="UsersApp.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UsersApp"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Панель админа" Height="450" Width="800">
+    <Grid Background="Gray" Cursor="">
+        <Border MinWidth="400" Margin="15" Background="White" VerticalAlignment="Center" Padding="30" MaxWidth="550" CornerRadius="20">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="60" Color="Black" ShadowDepth="0"/>
+                </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Панель админа" FontSize="32" FontWeight="Bold" Margin="0 0 0 20" HorizontalAlignment="Center"/>
+                <Grid>
+                    <Button Content="Банковские карты" HorizontalAlignment="left" Click="Button_Bank" Style="{StaticResource MaterialDesignFlatSecondaryDarkButton}"/>
+                    <Button Content="Лист пользователей" HorizontalAlignment="Right" Click="Button_UserPageWindows" Style="{StaticResource MaterialDesignFlatSecondaryDarkButton}"/>
+                </Grid>
+                <TextBox x:Name="NameItem" materialDesign:HintAssist.Hint="Введите Название товара"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="TechnicalCharacteristics" materialDesign:HintAssist.Hint="Введите Технические характеристики товара"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="Despription" materialDesign:HintAssist.Hint="Введите описание товара"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="Price" materialDesign:HintAssist.Hint="Введите Технические характеристики товара"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="quantity" materialDesign:HintAssist.Hint="Введите описание товара"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <Grid>
+                <Button Click="PhotoReg" MinWidth="200" Margin="0 20" HorizontalAlignment="Right" Content="Загрузить фото"/>
+                <Button Click="ItemReg" MinWidth="200" Margin="0 20" HorizontalAlignment="Left" Content="Зарегистрировать товар"/>
+                </Grid>
+            </StackPanel>
+         </Border>
+    </Grid>
+</Window>

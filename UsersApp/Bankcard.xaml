@@ -1,0 +1,33 @@
+﻿<Window x:Class="UsersApp.Bankcard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:UsersApp"
+        mc:Ignorable="d"
+        Title="Bankcard" Height="450" Width="800">
+    <Grid>
+        <Grid Background="Gray" Cursor="">
+            <Border MinWidth="500" Margin="15" Background="White" VerticalAlignment="Center" Padding="30" MaxWidth="550" CornerRadius="20">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="60" Color="Black" ShadowDepth="0"/>
+                </Border.Effect>
+                <StackPanel>
+                    <TextBlock Margin="0 20" Text="Банковские карты" FontSize="32" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    <Grid Margin="0 0 0 20">
+                        <Button Content="Вернуться в меню" HorizontalAlignment="Left" MinWidth="200" Style="{StaticResource MaterialDesignFlatSecondaryDarkButton}"/>
+                        <Button Content="Перейти к товарам" HorizontalAlignment="Right" MinWidth="200" Style="{StaticResource MaterialDesignFlatSecondaryDarkButton}"/>
+                    </Grid>
+                    <TextBox x:Name="Textbox_Card" materialDesign:HintAssist.Hint="Введите Номер карты" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                    <TextBox x:Name="Textbox_Price" materialDesign:HintAssist.Hint="Введите баланс карты" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                    <TextBox x:Name="Textbox_cvv" materialDesign:HintAssist.Hint="Введите cvv" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                    <Grid Margin="0 20">
+                        <Button HorizontalAlignment="Left" Content="Зарегистрировать карту" MinWidth="200" Click="ButtonReg"/>
+                        <Button HorizontalAlignment="Right" Content="Обновить баланс карты" MinWidth="200" Click="ButtonUpd"/>
+                    </Grid>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>
