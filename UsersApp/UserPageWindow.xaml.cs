@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Security.Principal;
 using System.Text;
@@ -21,14 +22,15 @@ namespace UsersApp
     /// </summary>
     public partial class UserPageWindow : Window
     {
+
         public UserPageWindow()
         {
             InitializeComponent();
 
             AppContext bd = new AppContext();
-            List<User> users = bd.Users.ToList();
+            List<Item> items = bd.Items.ToList();
 
-            listOfUsers.ItemsSource = users;
+            listOfUsers.ItemsSource = items;
         }
 
         private void Button_account_Click(object sender, RoutedEventArgs e)

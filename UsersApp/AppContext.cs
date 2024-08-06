@@ -16,6 +16,8 @@ namespace UsersApp
 
         public DbSet<Basket> Baskets { get; set; }
 
+        public DbSet<Item> Items { get; set; }
+
         public AppContext(): base("DefaultConnection") { }
     }
 }

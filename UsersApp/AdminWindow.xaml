@@ -18,11 +18,11 @@
                     <Button Content="Банковские карты" HorizontalAlignment="left" Click="Button_Bank" Style="{StaticResource MaterialDesignFlatSecondaryDarkButton}"/>
                     <Button Content="Лист пользователей" HorizontalAlignment="Right" Click="Button_UserPageWindows" Style="{StaticResource MaterialDesignFlatSecondaryDarkButton}"/>
                 </Grid>
-                <TextBox x:Name="NameItem" materialDesign:HintAssist.Hint="Введите Название товара"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
-                <TextBox x:Name="TechnicalCharacteristics" materialDesign:HintAssist.Hint="Введите Технические характеристики товара"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
-                <TextBox x:Name="Despription" materialDesign:HintAssist.Hint="Введите описание товара"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
-                <TextBox x:Name="Price" materialDesign:HintAssist.Hint="Введите Технические характеристики товара"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
-                <TextBox x:Name="quantity" materialDesign:HintAssist.Hint="Введите описание товара"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="TextBox_NameItem" materialDesign:HintAssist.Hint="Введите Название товара"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="TextBox_TechnicalCharacteristics" materialDesign:HintAssist.Hint="Введите Технические характеристики товара"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="TextBox_Despription" materialDesign:HintAssist.Hint="Введите описание товара"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="TextBox_Price" materialDesign:HintAssist.Hint="Введите цену товара"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="TextBox_quantity" materialDesign:HintAssist.Hint="Введите количество товара"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
                 <Grid>
                 <Button Click="PhotoReg" MinWidth="200" Margin="0 20" HorizontalAlignment="Right" Content="Загрузить фото"/>
                 <Button Click="ItemReg" MinWidth="200" Margin="0 20" HorizontalAlignment="Left" Content="Зарегистрировать товар"/>
