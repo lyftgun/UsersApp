@@ -8,11 +8,18 @@
         mc:Ignorable="d"
         Title="Список товаров" Height="450" Width="800">
     <Grid Background="Gray" Cursor="">
-        <Border MinWidth="500" Margin="15" Background="White" VerticalAlignment="Center" Padding="30" MaxWidth="550" CornerRadius="20">
+        <Border MinWidth="500" Margin="15" Background="White" VerticalAlignment="Center" Padding="30" CornerRadius="20">
             <Border.Effect>
                 <DropShadowEffect BlurRadius="60" Color="Black" ShadowDepth="0"/>
             </Border.Effect>
             <StackPanel>
+                <DataGrid x:Name="DataGrid1" SelectionChanged="DataGrid_SelectionChanged" MinHeight="300" Style="{StaticResource MaterialDesignDataGrid}" ItemsSource="{Binding}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn x:Name="photo" Header="Изображение" MinWidth="200"></DataGridTextColumn>
+                        <DataGridTextColumn x:Name="ItemName" Header="Название товара"></DataGridTextColumn>
+                        <DataGridTextColumn x:Name="Price" Header="Цена"></DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
             </StackPanel>
         </Border>
     </Grid>

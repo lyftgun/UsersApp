@@ -12,6 +12,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Data.SQLite;
+using ControlzEx.Standard;
 
 namespace UsersApp
 {
@@ -20,14 +22,21 @@ namespace UsersApp
     /// </summary>
     public partial class Personal_account : Window
     {
-
+        AppContext bd;
         public Personal_account()
         {
             InitializeComponent();
+
+            bd = new AppContext();
         }
 
         private void Button_Aut_Click(object sender, RoutedEventArgs e)
         {
+        }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
         }
     }
 }

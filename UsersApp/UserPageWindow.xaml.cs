@@ -22,7 +22,6 @@ namespace UsersApp
     /// </summary>
     public partial class UserPageWindow : Window
     {
-
         public UserPageWindow()
         {
             InitializeComponent();
