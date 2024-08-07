@@ -16,8 +16,8 @@
                 <StackPanel>
                     <TextBlock Margin="0 20" Text="Банковские карты" FontSize="32" FontWeight="Bold" HorizontalAlignment="Center"/>
                     <Grid Margin="0 0 0 20">
-                        <Button Content="Вернуться в меню" HorizontalAlignment="Left" MinWidth="200" Style="{StaticResource MaterialDesignFlatSecondaryDarkButton}"/>
-                        <Button Content="Перейти к товарам" HorizontalAlignment="Right" MinWidth="200" Style="{StaticResource MaterialDesignFlatSecondaryDarkButton}"/>
+                        <Button Content="Вернуться в меню" Click="ButtonBack" HorizontalAlignment="Left" MinWidth="200" Style="{StaticResource MaterialDesignFlatSecondaryDarkButton}" />
+                        <Button Content="Перейти к товарам" Click="ButtonItem" HorizontalAlignment="Right" MinWidth="200" Style="{StaticResource MaterialDesignFlatSecondaryDarkButton}"/>
                     </Grid>
                     <TextBox x:Name="Textbox_Card" materialDesign:HintAssist.Hint="Введите Номер карты" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
                     <TextBox x:Name="Textbox_Price" materialDesign:HintAssist.Hint="Введите баланс карты" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>

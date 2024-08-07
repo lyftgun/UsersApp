@@ -102,6 +102,7 @@ namespace UsersApp
             UserPageWindow usergage = new UserPageWindow();
             usergage.Show();
             Hide();
+            MessageBox.Show("Фотография добавлена");
         }
 
         private void PhotoReg(object sender, RoutedEventArgs e)

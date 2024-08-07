@@ -38,7 +38,7 @@ namespace UsersApp
 
         private void Button_Reg_Click(object sender, RoutedEventArgs e)
         {
-            string role = "user";
+            string role = "admin";
             string login = TextBox_Login.Text.Trim();
             string password = PassBox_Pass.Password.Trim();
             string password2 = PassBox_Pass2.Password.Trim();

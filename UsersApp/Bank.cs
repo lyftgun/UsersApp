@@ -13,9 +13,9 @@ namespace UsersApp
         [Key]
         public int IDBank { get; set; }
 
-        private string bankcard, cvv;
+        private string bankcard;
 
-        private int balance;
+        private int balance, cvv;
 
         public string Bankcard
         {
@@ -23,7 +23,7 @@ namespace UsersApp
             set { bankcard = value; }
         }
 
-        public string Cvv 
+        public int Cvv 
         { 
             get { return cvv; }
             set { cvv = value; }
@@ -37,7 +37,7 @@ namespace UsersApp
 
         public Bank() { }
 
-        public Bank(string Bankcard, string Cvv, int Balance)
+        public Bank(string Bankcard, int Cvv, int Balance)
         {
             this.bankcard = Bankcard;
             this.cvv = Cvv;
